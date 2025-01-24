@@ -6,7 +6,10 @@
   --background: #ffffff;
   --foreground: #171717;
 }
-
+html
+{
+ 
+}
 @media (prefers-color-scheme: dark) {
   :root {
     --background: #0a0a0a;
@@ -17,5 +20,25 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-poppins);
+}
+
+.footer-bg
+{
+ background-image:  url(../../public/background/footer_bg.png);
+ }  
+
+ .hide-scrollbar {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* Internet Explorer and Edge */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Webkit browsers */
+}
+.banner
+{
+  background-image: linear-gradient(0deg, rgba(14, 20, 39, 0.822),#0e1427eb), url('../../public/background/banner_bg.png');
+  background-repeat: repeat;
+  background-size: cover;
 }
