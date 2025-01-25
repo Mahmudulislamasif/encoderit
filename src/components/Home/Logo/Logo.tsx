@@ -16,7 +16,7 @@ const Logo = () => {
             <div className='container mx-auto'>
                 <Marquee gradient={false} speed={50}>
                     <div className='flex space-x-20'>
-                        <Image src={Logo1} alt="VW Logo" width={70} height={70} />
+                        <Image src={Logo1} alt="VW Logo" width={70} height={70}  />
                         <Image src={Logo2} alt="Audi Logo" width={70} height={70} />
                         <Image src={Logo3} alt="BMW Logo" width={70} height={70} />
                         <Image src={Logo4} alt="Jaguar Logo" width={70} height={70} />
