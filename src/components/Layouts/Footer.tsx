@@ -40,7 +40,7 @@ const Footer = () => {
                 </h2>
                 {/* <Divider /> */}
                 <div className="text-[15px]">
-                  <p className="mt-8">
+                  <p className="mt-4 md:mt-8">
                     When you need the best auto parts for your ride, turn to
                     Autovio. Limited time offer for only new customer also get
                     free shipping on orders.
@@ -62,12 +62,12 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                <h2 className="text-[21px] mt-14 mb-3 font-semibold  uppercase">
+                <h2 className="text-[21px] mt-7 md:mt-14 mb-3 font-semibold  uppercase">
                   Our company
                 </h2>
                 {/* <Divider /> */}
                 <div className="text-[16px] flex flex-col gap-4">
-                  <div className="flex items-center mt-4 gap-2">
+                  <div className="flex items-center mt-2 md:mt-4 gap-2">
                     <p>
                       <Link href="#">Delivery</Link>
                     </p>
@@ -100,7 +100,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="col-span-12 md:col-span-6 lg:col-span-3">
-                <h2 className="text-[21px] mt-14 mb-3 font-semibold uppercase">
+                <h2 className="text-[21px] mt-7 md:mt-14 mb-3 font-semibold uppercase">
                   Our Services
                 </h2>
                 {/* <Divider /> */}
@@ -138,7 +138,7 @@ const Footer = () => {
                 </div>
               </div>
               <div className="md:col-span-6 lg:col-span-3 col-span-12">
-                <h2 className="text-[21px] mt-14 mb-3 font-semibold uppercase">
+                <h2 className="text-[21px] mt-7 md:mt-14 mb-3 font-semibold uppercase">
                   contact us
                 </h2>
                 {/* <Divider /> */}
