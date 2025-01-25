@@ -153,13 +153,14 @@ export default function Header() {
               <Link
                 key={item.name}
                 href={item.path}
-                className={`text-white text-sm hover:[#EA4C49] md:border-r-[1px] md:border-white ${
-                  isActive(item.path) && "text-[#EA4C49] font-bold"
+                className={`text-white text-sm hover:[#EA4C49]  ${
+                  isActive(item.path) && "text-red-500 font-bold"
                 }`}
               >
                 {item.name}
               </Link>
             ))}
+            {/* Height area */}
           </nav>
         </div>
 
@@ -167,16 +168,20 @@ export default function Header() {
         <div className="hidden md:flex items-center justify-between px-4 py-4">
           {/* Navigation Links */}
           <nav className="flex">
-            {menu.map((item) => (
-              <Link
-                key={item.name}
-                href={item.path}
-                className={`text-white text-sm hover:text-[#EA4C49] border-r-[1px] border-white px-4 ${
-                  isActive(item.path) && "text-[#EA4C49] font-bold"
-                }`}
-              >
-                {item.name}
-              </Link>
+            {menu.map((item, index) => (
+              <div key={item.name} className="flex">
+                <Link
+                  href={item.path}
+                  className={`text-white text-sm hover:text-[#EA4C49] px-4 ${
+                    isActive(item.path) && "text-red-500 font-bold"
+                  }`}
+                >
+                  {item.name}
+                </Link>
+                {index !== menu.length - 1 && (
+                  <div className="w-[1px] bg-white h-[9px] mt-[6px]"></div>
+                )}
+              </div>
             ))}
           </nav>
           <div className="flex gap-2 items-center ">
@@ -208,7 +213,7 @@ export default function Header() {
                 <input
                   type="text"
                   placeholder="Search"
-                  className="border-[1px] border-white rounded-xl outline-none pr-10 pl-2 py-2 w-full bg-[#253146] max-w-lg text-white opacity-45"
+                  className="border-[1px] border-white rounded-[10px] outline-none pr-10 pl-2 py-2 w-full bg-[#253146] xl:w-[430px] text-white opacity-45"
                 />
                 <div className="absolute top-[10px] right-2">
                   <CiSearch className="text-white text-xl" />
@@ -236,6 +241,17 @@ export default function Header() {
                 <CiHeart className=" text-white  text-3xl  rounded-lg p-1" />
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      <div className="bg-[#1F242D] md:flex hidden">
+        <div className=" container mx-auto px-2 py-3">
+          <div className="flex items-center justify-center gap-8">
+            <p className="text-white text-[17px]">OBDeleven</p>
+            <p className="text-white text-[17px]">Scanner Types</p>
+            <p className="text-white text-[17px]">Car Makes</p>
+            <p className="text-white text-[17px]">Service Reset Tools</p>
+            <p className="text-white text-[17px]">Other Tools & Accessories</p>
           </div>
         </div>
       </div>

@@ -33,7 +33,7 @@ const Testimonial = () => {
 
   return (
     <div className="bg-[#1D232D]">
-      <div className="container mx-auto py-20">
+      <div className="container mx-auto py-20 px-4">
         <div className="flex justify-between">
           <h3 className="font-bold text-white md:text-[34px] text-2xl">
             THE LOVE FROM OUR <br /> CUSTOMERS
