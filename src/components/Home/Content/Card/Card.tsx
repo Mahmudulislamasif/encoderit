@@ -33,7 +33,7 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className="py-10">
+    <div className="md:py-20 py-5">
       <h1 className="uppercase text-[29px] text-white md:text-left text-center md:text-[34px] font-bold">
         Why Choose Us?
       </h1>
@@ -41,7 +41,12 @@ const Card = () => {
         {cardData.map((card, index) => (
           <div key={index} className="flex flex-col gap-4">
             <div className="flex gap-4 items-center">
-              <Image src={card.mainImg} alt="Car Diagnostic" width={45} height={45} />
+              <Image
+                src={card.mainImg}
+                alt="Car Diagnostic"
+                width={45}
+                height={45}
+              />
               <h3 className="text-white font-semibold md:text-[27px] text-[22px]">
                 {card.mainTitle.split("\n").map((line, i) => (
                   <React.Fragment key={i}>
@@ -52,8 +57,15 @@ const Card = () => {
               </h3>
             </div>
             <div className="flex gap-4 items-start">
-              <Image src={card.subImg} alt="Car Diagnostic" width={25} height={35} />
-              <p className="text-sm font-normal text-[#CCCCCC]">{card.description}</p>
+              <Image
+                src={card.subImg}
+                alt="Car Diagnostic"
+                width={25}
+                height={35}
+              />
+              <p className="text-sm font-normal text-[#CCCCCC]">
+                {card.description}
+              </p>
             </div>
           </div>
         ))}

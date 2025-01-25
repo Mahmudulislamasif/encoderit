@@ -5,13 +5,12 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Autoplay, Pagination, Navigation } from "swiper/modules";
-import { FaRegArrowAltCircleLeft } from "react-icons/fa";
+
 import Image from "next/image";
-import { FaRegArrowAltCircleRight } from "react-icons/fa";
-import Link from "next/link";
+
 import { featureProduct } from "@/components/Constant/Constat";
 import { FaStar } from "react-icons/fa6";
-import Divider from "@/components/UI/Divider";
+
 import { MdOutlineShoppingCart } from "react-icons/md";
 import { CiHeart } from "react-icons/ci";
 import { IoIosArrowBack, IoIosArrowForward } from "react-icons/io";
@@ -23,7 +22,7 @@ const Cart = () => {
 
   return (
     <div className="container mx-auto mb-9 px-2">
-      <div >
+      <div>
         <div className="flex justify-between py-10">
           <div className=" flex gap-4 max-w-[1080px] overflow-x-auto hide-scrollbar items-center">
             {tabs.map((tab) => (
@@ -37,9 +36,9 @@ const Cart = () => {
                 {tab}
               </button>
             ))}
-            <p className="text-base font-semibold text-[#737F96]  flex gap-1 items-center">
-             <span> See All Products</span>
-            <IoIosArrowForward  />
+            <p className="text-xs md:text-base font-semibold text-[#737F96]  flex gap-1 items-center">
+              <span> See All Products</span>
+              <IoIosArrowForward />
             </p>
           </div>
           <div className="md:flex gap-2 hidden">
@@ -60,7 +59,6 @@ const Cart = () => {
             },
             640: {
               slidesPerView: 2,
-             
             },
             768: {
               slidesPerView: 3,
@@ -80,7 +78,7 @@ const Cart = () => {
           modules={[Pagination, Autoplay, Navigation]}
           className="relative"
         >
-          {featureProduct.map((com, index) => (
+          {featureProduct.map((com) => (
             <SwiperSlide key={com.id} className="group">
               <div className="group-hover:border-b-red transition-all duration-500 ease-in-out rounded-2xl">
                 <div className="relative">
@@ -136,7 +134,7 @@ const Cart = () => {
               </div>
             </SwiperSlide>
           ))}
-             <div className="md:hidden gap-2 flex mt-5 items-center justify-center">
+          <div className="md:hidden gap-2 flex mt-5 items-center justify-center">
             <div className="button-prev-slide right-0 grid place-items-center text-white rounded-lg bg-[#253146] w-10 h-10">
               <IoIosArrowBack />
             </div>

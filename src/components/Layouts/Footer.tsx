@@ -9,13 +9,11 @@ import Card4 from "../../../public/card/card-4.png";
 import Card5 from "../../../public/card/card-5.png";
 
 import Link from "next/link";
-import { FaCirclePlus, FaInstagram } from "react-icons/fa6";
-import { IoMdArrowDropright } from "react-icons/io";
+import { FaInstagram } from "react-icons/fa6";
+
 import { FaFacebookF } from "react-icons/fa";
 import { FaXTwitter } from "react-icons/fa6";
-import { FaPinterestP, FaLinkedinIn, FaGooglePlusG } from "react-icons/fa";
-import { FaApple } from "react-icons/fa6";
-import { FaGooglePlay } from "react-icons/fa6";
+
 import { CiYoutube } from "react-icons/ci";
 import Divider from "../UI/Divider";
 const Footer = () => {
