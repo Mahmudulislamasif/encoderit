@@ -34,7 +34,7 @@ const cardData = [
 const Card = () => {
   return (
     <div className="md:py-20 py-7">
-      <h1 className="uppercase text-[29px] text-white md:text-left text-center md:text-[34px] font-bold">
+      <h1 className="uppercase text-2xl text-white md:text-left text-center md:text-[34px] font-bold">
         Why Choose Us?
       </h1>
       <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mt-3 md:mt-10">

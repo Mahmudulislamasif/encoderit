@@ -35,7 +35,7 @@ const Testimonial = () => {
     <div className="bg-[#1D232D]">
       <div className="container mx-auto py-20 px-4">
         <div className="flex justify-between">
-          <h3 className="font-bold text-white md:text-[34px] text-2xl">
+          <h3 className="font-bold text-white md:text-[34px] text-xl italic leading-8">
             THE LOVE FROM OUR <br /> CUSTOMERS
           </h3>
           <p className="text-xs md:text-base font-semibold text-[#737F96] flex gap-1 items-center">
