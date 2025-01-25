@@ -46,7 +46,7 @@ const Testimonial = () => {
         {/* Tabs */}
         <div className="grid grid-cols-1 bg-[#1F2632] mt-10 relative ">
           <div className="md:p-10 p-4">
-            <div className="flex justify-between">
+            <div className="flex justify-between items-center flex-wrap">
               <div className="flex gap-1 md:gap-10 items-center">
                 <div className="flex gap-3">
                   <p className="md:text-2xl text-sm text-[#737F96]">

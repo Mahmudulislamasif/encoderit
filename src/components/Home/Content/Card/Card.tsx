@@ -33,11 +33,11 @@ const cardData = [
 
 const Card = () => {
   return (
-    <div className="md:py-20 py-10">
-      <h1 className="uppercase text-2xl italic text-white md:text-left text-center md:text-[34px] font-bold">
+    <div >
+      <h1 className="uppercase text-2xl italic text-white md:text-left text-center md:text-[34px] font-bold md:py-20 py-10">
         Why Choose Us?
       </h1>
-      <div className="grid md:grid-cols-3 grid-cols-1 gap-4 mt-3 md:mt-10">
+      <div className="grid md:grid-cols-3 grid-cols-1 gap-4">
         {cardData.map((card, index) => (
           <div key={index} className="flex flex-col gap-4">
             <div className="flex gap-4 items-center">

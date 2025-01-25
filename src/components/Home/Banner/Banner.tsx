@@ -37,8 +37,8 @@ const Banner = () => {
       <div className="relative">
         {/* Delivery Section */}
         <div className="md:flex hidden mb-4 container mx-auto  ">
-          <div className="flex items-center  justify-between flex-1 gap-10">
-            <div className="flex items-center pt-5">
+          <div className="flex items-center  justify-between flex-1 gap-10 pt-5">
+            <div className="flex items-center ">
               <Image
                 src={img1}
                 width={32}

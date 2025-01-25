@@ -23,7 +23,8 @@ const Cart = () => {
   return (
     <div className="container mx-auto mb-9 px-2">
       <div>
-        <div className="flex justify-between py-10">
+        <h1 className="uppercase text-2xl italic text-white md:text-left text-center md:text-[34px] font-bold md:pt-20 pt-10">Featured Products</h1>
+        <div className="flex justify-between md:py-10 py-5">
           <div className=" flex gap-4 max-w-[1080px] overflow-x-auto hide-scrollbar items-center">
             {tabs.map((tab) => (
               <button

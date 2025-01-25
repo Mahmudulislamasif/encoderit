@@ -7,7 +7,7 @@ const Hero = () => {
   return (
     <div>
       <div className="md:pb-20 pb-10">
-        <h3 className="md:text-2xl text-sm text-[#CCCCCC] text-center font-light">
+        <h3 className="md:text-2xl text-sm text-[#CCCCCC] text-center font-light leading-9">
           Car Diagnostic
         </h3>
         <h2 className="text-white md:text-[34px] text-2xl text-center font-bold">

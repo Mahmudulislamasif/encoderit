@@ -105,6 +105,7 @@ export default function Header() {
               <h1 className="text-[30px] text-white ">Logo</h1>
             </div>
             <div className="flex items-center gap-2">
+              {/* Serach icon for obile view */}
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
@@ -126,6 +127,7 @@ export default function Header() {
                   strokeLinejoin="round"
                 />
               </svg>
+              {/* End */}
               <MdOutlineShoppingCart className="text-white  text-3xl  rounded-lg p-1" />
               <div>
                 <Image src={img7} alt="" width={20} height={20} />
