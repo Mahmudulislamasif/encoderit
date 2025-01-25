@@ -6,7 +6,7 @@ import Divider from "@/components/UI/Divider";
 const Hero = () => {
   return (
     <div>
-      <div className="md:pb-20 pb-5">
+      <div className="md:pb-20 pb-10">
         <h3 className="md:text-2xl text-sm text-[#CCCCCC] text-center font-light">
           Car Diagnostic
         </h3>

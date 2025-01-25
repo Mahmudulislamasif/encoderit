@@ -6,7 +6,7 @@ import Cart from "./Cart/Cart";
 const Content = () => {
   return (
     <section className="bg-[#1A1F28]">
-      <div className="container mx-auto py-5 md:py-20 px-5">
+      <div className="container mx-auto py-10 md:py-20 px-5">
         <Hero />
         <Card />
         <Cart />
