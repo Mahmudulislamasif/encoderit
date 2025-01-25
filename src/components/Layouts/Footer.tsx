@@ -24,7 +24,7 @@ const Footer = () => {
         <div>
           <div >
             <div className="container mx-auto px-4">
-            <div className="py-5 md:py-10">
+            <div className="py-0 md:py-5">
               {/* <Image
               src={logo}
               width={117}
@@ -66,7 +66,7 @@ const Footer = () => {
                   Our company
                 </h2>
                 {/* <Divider /> */}
-                <div className="text-[16px] flex flex-col gap-4">
+                <div className="text-[16px] flex flex-col gap-2 md:gap-4">
                   <div className="flex items-center mt-2 md:mt-4 gap-2">
                     <p>
                       <Link href="#">Delivery</Link>
@@ -104,7 +104,7 @@ const Footer = () => {
                   Our Services
                 </h2>
                 {/* <Divider /> */}
-                <div className="text-[16px] flex flex-col gap-4">
+                <div className="text-[16px] flex flex-col gap-2 md:gap-4">
                   <div className="flex items-center mt-4 gap-2">
                     <p>
                       <Link href="#">Car Diagnostic Tools</Link>
@@ -142,7 +142,7 @@ const Footer = () => {
                   contact us
                 </h2>
                 {/* <Divider /> */}
-                <div className="text-[16px] flex flex-col gap-4">
+                <div className="text-[16px] flex flex-col gap-2 md:gap-4">
                   <div className="flex items-center mt-4 gap-2">
                     <p className="text-[#EA4C49]">
                       <Link href="#">
